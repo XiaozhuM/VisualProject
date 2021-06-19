@@ -1,0 +1,44 @@
+---
+title: "Project proposal"
+description: |
+  The project proposal for ISSS608-Visual Analytics
+author:
+  - name: Xiaozhu
+    Group: G2-group2
+date: 06-19-2021
+output:
+  distill::distill_article:
+    self_contained: false
+    output:
+    toc: true
+    toc_float: true
+draft: false
+---
+
+# Title:
+
+plans on mini challenges to do  
+
+## Motivation and Objective 
+
+
+## Tasks and analysis  
+### Mini challenge 1 - XZ  
+what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
+
+### Mini challenge 2 - maybe    
+what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
+
+### Mini challange 3 - maybe  
+what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
+
+
+
+## Conclusion  
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+

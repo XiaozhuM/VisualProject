@@ -1,0 +1,36 @@
+[
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Visual Analytics Project",
+    "description": "Welcome to our new blog, Visual Analytics Project. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-06-19",
+    "categories": [],
+    "contents": "\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-06-19T15:40:14+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/2021-06-19-project-proposal/",
+    "title": "Project proposal",
+    "description": "The project proposal for ISSS608-Visual Analytics",
+    "author": [
+      {
+        "name": "Xiaozhu",
+        "url": {}
+      }
+    ],
+    "date": "2021-06-19",
+    "categories": [],
+    "contents": "\n\nContents\nTitle:Motivation and Objective\nTasks and analysisMini challenge 1 - XZ\nMini challenge 2 - maybe\nMini challange 3 - maybe\n\nConclusion\n\n\nTitle:\nplans on mini challenges to do\nMotivation and Objective\nTasks and analysis\nMini challenge 1 - XZ\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nMini challenge 2 - maybe\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nMini challange 3 - maybe\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nConclusion\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-06-19T16:07:09+08:00",
+    "input_file": "project-proposal.knit.md"
+  }
+]
