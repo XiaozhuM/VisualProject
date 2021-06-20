@@ -1,22 +1,5 @@
 [
   {
-    "path": "posts/welcome/",
-    "title": "Welcome to Visual Analytics Project",
-    "description": "Welcome to our new blog, Visual Analytics Project. We hope you enjoy \nreading what we have to say!",
-    "author": [
-      {
-        "name": "Nora Jones",
-        "url": "https://example.com/norajones"
-      }
-    ],
-    "date": "2021-06-19",
-    "categories": [],
-    "contents": "\n\n\n\n",
-    "preview": {},
-    "last_modified": "2021-06-19T15:40:14+08:00",
-    "input_file": {}
-  },
-  {
     "path": "posts/2021-06-19-project-proposal/",
     "title": "Project proposal",
     "description": "The project proposal for ISSS608-Visual Analytics",
@@ -28,9 +11,26 @@
     ],
     "date": "2021-06-19",
     "categories": [],
-    "contents": "\n\nContents\nTitle:Motivation and Objective\nTasks and analysisMini challenge 1 - XZ\nMini challenge 2 - maybe\nMini challange 3 - maybe\n\nConclusion\n\n\nTitle:\nplans on mini challenges to do\nMotivation and Objective\nTasks and analysis\nMini challenge 1 - XZ\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nMini challenge 2 - maybe\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nMini challange 3 - maybe\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\nConclusion\n\n\n\n",
+    "contents": "\r\n\r\nContents\r\nTitle:Motivation and Objective\r\nTasks and analysisMini challenge 1 - XZ\r\nMini challenge 2\r\nMini challange 3 - maybe\r\n\r\nConclusion\r\n\r\n\r\nTitle:\r\nplans on mini challenges to do\r\nMotivation and Objective\r\nTasks and analysis\r\nMini challenge 1 - XZ\r\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\r\nMini challenge 2\r\nBACKGROUND:\r\nMany of the Abila, Kronos-based employees of GAStech have company cars which are approved for both personal and business use. Those who do not have company cars have the ability to check out company trucks for business use, but these trucks cannot be used for personal business.\r\nEmployees with company cars are happy to have these vehicles, because the company cars are generally much higher quality than the cars they would be able to afford otherwise. However, GAStech does not trust their employees. Without the employees? knowledge, GAStech has installed geospatial tracking software in the company vehicles. The vehicles are tracked periodically as long as they are moving.\r\n\r\nThis vehicle tracking data has been made available to law enforcement to support their investigation. Unfortunately, data is not available for the day the GAStech employees went missing. Data is only available for the two weeks prior to the disappearance.\r\nTo promote local businesses, Kronos based companies provide a Kronos Kares benefit card to GASTech employees giving them discounts and rewards in exchange for collecting information about their credit card purchases and preferences as recorded on loyalty cards. This data has been made available to investigators in the hopes that it can help resolve the situation. However, Kronos Kares does not collect personal information beyond purchases.\r\nDATA SOURCE:\r\nDownload From Official Site\r\nTable Header\r\nSecond Header\r\ncar-assignments.csv\r\nEmployee Last Name, Employee First Name, Car ID, Employment Type, Employment Title\r\ngps.csv\r\nTimestamp, Car ID, Latitude, Longitude\r\nloyalty_data.csv\r\nTimestamp, Location, Price, Loyalty Number\r\ncc_data.csv\r\nTimestamp, Location, Price, Last 4 digits of the credit or debit card number\r\nGeo Data\r\nESRI shapefiles of Abila and Kronos\r\n\r\nTOOLS WILL BE USED:\r\nThis sub-project will fully conduct under R language. This task will be realized by coding with algorithm and some official packages to achieve the final goal. Following are some packages for example:\r\nsp:Classes and methods for spatial data.\r\nsf:A package that provides simple features access for R.\r\nspdep:A collection of functions to create spatial weights matrix objects from polygon ‘contiguities’, from point patterns by distance and tessellations.\r\nmaptools:Set of tools for manipulating geographic data.\r\nraster:Reading, writing, manipulating, analyzing and modeling of spatial data.\r\ntidyverse:The tidyverse is an opinionated collection of R packages designed for data science.\r\nEXPECTED OUTPUTS:\r\nBasic task\r\nUsing just the credit and loyalty card data, identify the most popular locations, and when they are popular. Try to find the anomalies and give recommends to correct these anomalies.\r\nInfer the owners of each credit card and loyalty card.\r\n\r\nAdvanced task\r\nAdd the vehicle data to analysis of the credit and loyalty card data. Find the anomalies in question 1 based on the new data. Find discrepancies between vehicle, credit, and loyalty card data.\r\nBased on the data sources provided, identify potential informal or unofficial relationships among GASTech personnel.\r\nFind evidence of suspicious activity and identify 1- 10 locations where might be occurring suspicious activity.\r\n\r\nMini challange 3 - maybe\r\nwhat is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell\r\nConclusion\r\n\r\n\r\n\r\n",
     "preview": {},
-    "last_modified": "2021-06-19T16:07:09+08:00",
-    "input_file": "project-proposal.knit.md"
+    "last_modified": "2021-06-20T17:03:33+08:00",
+    "input_file": {}
+  },
+  {
+    "path": "posts/welcome/",
+    "title": "Welcome to Visual Analytics Project",
+    "description": "Welcome to our new blog, Visual Analytics Project. We hope you enjoy \nreading what we have to say!",
+    "author": [
+      {
+        "name": "Nora Jones",
+        "url": "https://example.com/norajones"
+      }
+    ],
+    "date": "2021-06-19",
+    "categories": [],
+    "contents": "\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2021-06-20T16:49:25+08:00",
+    "input_file": {}
   }
 ]
