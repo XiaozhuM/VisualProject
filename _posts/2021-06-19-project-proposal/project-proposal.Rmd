@@ -156,7 +156,16 @@ R has a rich set of packages for Natural Language Processing (NLP) and generatin
 #### **Expected Outputs** 
 According to the text analysis and visualization results on **Microblog** and **Text transcripts** on January 23, 2014 17:00 to 21:31 to find out highly possible incident to happen in the future days in Abila, Kronos. With the analysis result, we will propose  effective action to stop such incident from happening.     
 
-## Milestones  
+## Milestones    
+* Create project github before Jun,20,2021.  
+
+* Building project website between July,15,2021-Aug,15,2021 
+
+* Building Shinyapp between July,10,2021-Aug,15,2021  
+
+* Finishing Practice Research Paper between Jun,20,2021-Aug,15,2021  
+
+* Finishing Poster between Aug,10,2021-Aug,15,2021  
 
   
 
