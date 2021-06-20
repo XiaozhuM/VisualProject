@@ -29,12 +29,34 @@ what is the approach, tasks to perform, any challenge to expect, what are the ex
 ### Mini challenge 2 - maybe    
 what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
 
-### Mini challange 3 - maybe  
-what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
+### Mini challange 3 - Lu Di  
+#### **Task to performance**:  
+On January 23, 2014, multiple events unfolded in Abila. We are perform a retrospective analysis based on limited information about what took place.My goal is to identify risks and find way how to mitigated the risk more effectively.
 
+Base on the data provided, we will evaluate the changing levels of risk to the public and find effective action to avoid things that endanger public safety.
 
+#### **Data Source**:  
+Challenge 3 provide two kind of texts. One is **Microblog** which  have been identified by automated filters as being potentially relevant to the ongoing incident. The other is **Text transcripts** of emergency dispatches by the Abila, Kronos local police and fire departments.
 
-## Conclusion  
+#### **Tools will be used**:  
+R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below  to achieve different functions.  
+
+**tm**: Text mining operations like removing numbers, special characters, punctuation and stop words.  
+
+**snowballc**: For stem the word to reducing words to their base or root form.  
+
+**wordcloud**：For generating the word cloud plot.  
+
+**syuzhet**: For sentiment scores and emotion classification  
+
+**ggplot**: To visualize our analyze result by all kinds of plot.
+
+#### **Expected Outputs**: 
+According the text analysis and visualization result on **Microblog** and **Text transcripts** in On January 23, 2014 17:00 to 21:31 to find what's risk have high probability to happen in the future days in Abila, Kronos and figure out effective action to stop such risk from happening.     
+
+## Milestones  
+
+  
 
 
 ```{r setup, include=FALSE}
