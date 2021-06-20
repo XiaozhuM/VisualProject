@@ -3,15 +3,14 @@ title: "Project proposal"
 description: |
   The project proposal for ISSS608-Visual Analytics
 author:
-  - name: Xiaozhu
+  - name: Xiaozhu,LuDi,Wang JiaYi
     Group: G2-group2
 date: 06-19-2021
 output:
   distill::distill_article:
     self_contained: false
-    output:
     toc: true
-    toc_float: true
+    toc_depth: 4
 draft: false
 ---
 
@@ -74,16 +73,18 @@ Data can be downloaded from [VAST mini-challange 2](https://vast-challenge.githu
 
 
 ### Mini challange 3 - Lu Di  
-#### **Task and approach**:  
-On January 23, 2014, multiple events unfolded in Abila. We are performing a retrospective analysis based on limited information about what took place. My goal is to identify risks and find potential ways to mitigate the risk effectively.
+#### **Task to performance**:  
+On January 23, 2014, multiple events unfolded in Abila. We are perform a retrospective analysis based on limited information about what took place.My goal is to identify risks and find way how to mitigated the risk more effectively.
 
 Base on the data provided, we will evaluate the changing levels of risk to the public and find effective action to avoid things that endanger public safety.
 
-#### **Data Source**  
-Challenge 3 provides two kinds of texts. One is a collection of **Microblog** which has been identified by automated filters as potentially relevant to the ongoing incident. The other is **Text transcripts** of emergency dispatches by the Abila, Kronos local police and fire departments.
+#### **Data Source**:  
+Data can be downloaded from [VAST mini-challange 3](https://vast-challenge.github.io/2021/MC3.html)   
 
-#### **Tools will be used**  
-R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below to achieve different functions.  
+Challenge 3 provide two kind of texts. One is **Microblog** which  have been identified by automated filters as being potentially relevant to the ongoing incident. The other is **Text transcripts** of emergency dispatches by the Abila, Kronos local police and fire departments.
+
+#### **Tools will be used**:  
+R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below  to achieve different functions.  
 
 **tm**: Text mining operations like removing numbers, special characters, punctuation and stop words.  
 
@@ -95,10 +96,19 @@ R has a rich set of packages for Natural Language Processing (NLP) and generatin
 
 **ggplot**: To visualize our analyze result by all kinds of plot.
 
-#### **Expected Outputs** 
-According to the text analysis and visualization results on **Microblog** and **Text transcripts** on January 23, 2014 17:00 to 21:31 to find out highly possible incident to happen in the future days in Abila, Kronos. With the analysis result, we will propose  effective action to stop such incident from happening.     
+#### **Expected Outputs**: 
+According the text analysis and visualization result on **Microblog** and **Text transcripts** in On January 23, 2014 17:00 to 21:31 to find what's risk have high probability to happen in the future days in Abila, Kronos and figure out effective action to stop such risk from happening.     
 
-## Milestones  
+## Milestone    
+* Create project github before Jun,20,2021.  
+
+* Building project website between July,15,2021-Aug,15,2021 
+
+* Building Shinyapp between July,10,2021-Aug,15,2021  
+
+* Finishing Practice Research Paper between Jun,20,2021-Aug,15,2021  
+
+* Finishing Poster between Aug,10,2021-Aug,15,2021  
 
   
 
