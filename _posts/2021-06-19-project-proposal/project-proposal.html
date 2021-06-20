@@ -116,7 +116,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"NULL"}
+  {"type":"character","attributes":{},"value":["project-proposal_files/anchor-4.2.2/anchor.min.js","project-proposal_files/bowser-1.9.3/bowser.min.js","project-proposal_files/distill-2.2.21/template.v2.js","project-proposal_files/jquery-1.11.3/jquery.min.js","project-proposal_files/popper-2.6.0/popper.min.js","project-proposal_files/tippy-6.2.7/tippy-bundle.umd.min.js","project-proposal_files/tippy-6.2.7/tippy-light-border.css","project-proposal_files/tippy-6.2.7/tippy.css","project-proposal_files/tippy-6.2.7/tippy.umd.min.js","project-proposal_files/webcomponents-2.0.0/webcomponents.js"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
   <!--/radix_placeholder_navigation_in_header-->
@@ -1481,29 +1481,92 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <nav class="l-text toc figcaption" id="TOC">
 <h3>Contents</h3>
 <ul>
-<li><a href="#title">Title:</a><ul>
-<li><a href="#motivation-and-objective">Motivation and Objective</a></li>
+<li><a href="#understanding-the-story-behind-missing-gastech-employee">Understanding the story behind missing GASTech employee</a><ul>
+<li><a href="#backgroud-motivation-and-objective">Backgroud, Motivation and Objective</a></li>
 <li><a href="#tasks-and-analysis">Tasks and analysis</a><ul>
-<li><a href="#mini-challenge-1---xz">Mini challenge 1 - XZ</a></li>
-<li><a href="#mini-challenge-2---maybe">Mini challenge 2 - maybe</a></li>
-<li><a href="#mini-challange-3---maybe">Mini challange 3 - maybe</a></li>
+<li><a href="#mini-challenge-1---xiaozhu">Mini challenge 1 - Xiaozhu</a></li>
+<li><a href="#mini-challenge-2---jiayi">Mini challenge 2 - Jiayi</a></li>
+<li><a href="#mini-challange-3---lu-di">Mini challange 3 - Lu Di</a></li>
 </ul></li>
-<li><a href="#conclusion">Conclusion</a></li>
+<li><a href="#milestones">Milestones</a></li>
 </ul></li>
 </ul>
 </nav>
 </div>
-<h1 id="title">Title:</h1>
-<p>plans on mini challenges to do</p>
-<h2 id="motivation-and-objective">Motivation and Objective</h2>
+<h1 id="understanding-the-story-behind-missing-gastech-employee">Understanding the story behind missing GASTech employee</h1>
+<p>The project will use data from <a href="https://vast-challenge.github.io/2021/index.html">VAST challenge 2021</a> which the scenario, people, places, technologies are fictitious.The data used in the project, such as news article, resume, micro-blog posts are fictitious too.</p>
+<h2 id="backgroud-motivation-and-objective">Backgroud, Motivation and Objective</h2>
+<p>There are two fictitious countries involved in the project setting, Kronos and Tethys. They are both located around Mediterranean Sea. Tethys is a modern country, an economic leader and a key member of Europe’s economic, political, and defense organizations. On the contrary, Kronos is a country struggling with poverty with 70% of the population below poverty line. GASTech is a Tethys owned company operating natural gas production in Kronos. Employees are from both Tethys and Kronos with diverse background.</p>
+<p>In 2014, in the midst of celebrating GASTech IPO, several employees went missing. A political activist organization, Protectors Of Kronos(POK) was suspected to be in the disappearance.</p>
+<p>As data analysts specialized in visual analytics, we are helping law enforcement to dive into details and piece together the story of disappearance.</p>
+<ol type="1">
+<li>Looking through resumes, past news articles, email conversation headers within GASTech to find out the relationship among the people and organizations. Organizations include GASTech, POK, the APA. The sub-task aims to provide background information of the kidnap and hint of suspicious people for further investigation.<br />
+</li>
+<li>With GPS tracking data of GASTech cars provided to the employee, credit card transactions, and loyalty card usage, this sub-task aims to identify any suspicious itinerary and behaviors.<br />
+</li>
+<li>Given collection of microblogs and emergency calls from the days surrounding the disappearance, we will use text analytics to evaluate the changing level of risk over time.</li>
+</ol>
 <h2 id="tasks-and-analysis">Tasks and analysis</h2>
-<h3 id="mini-challenge-1---xz">Mini challenge 1 - XZ</h3>
-<p>what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell</p>
-<h3 id="mini-challenge-2---maybe">Mini challenge 2 - maybe</h3>
-<p>what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell</p>
-<h3 id="mini-challange-3---maybe">Mini challange 3 - maybe</h3>
-<p>what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell</p>
-<h2 id="conclusion">Conclusion</h2>
+<p>During the first state, the sub tasks will be distributed among the group members. Each member will take on 1 task. In the second stage, all analysis and visualization will be combined to create a final dashboard using R Shiny.</p>
+<h3 id="mini-challenge-1---xiaozhu">Mini challenge 1 - Xiaozhu</h3>
+<h4 id="task-and-approach"><strong>Task and approach</strong></h4>
+<p>There are 3 categories of data provided for the mini challenge, email conversation headers, employee resume, current and past news article.</p>
+<ul>
+<li>Extract sender and receiver in email headers and construct a graph<br />
+</li>
+<li>Analyze bias in news through opinion analysis against POK, government and GASTech in each news source.<br />
+</li>
+<li>Analyze and investigate resumes in which some or all of the words from “GASTech”, “APA” are mentioned to find potential people who are affiliated with more than 1 organization.<br />
+</li>
+<li>Analyze the newspaper article in which 1 or more of the 36 employees from GASTech is mentioned, especially for articles in 2014 when the incident happened.<br />
+</li>
+<li>Look for cross reference between newspaper and find if there is any dependency among the news data source.</li>
+</ul>
+<h4 id="data-source"><strong>Data Source</strong></h4>
+<p>Data can be downloaded from <a href="https://vast-challenge.github.io/2021/MC1.html">VAST mini-challange 2</a>.</p>
+<ul>
+<li>A map of the fictitious Mediterranean island of Kronos</li>
+<li>Descriptions of the countries of Kronos and Tethys</li>
+<li>A chart describing the Kronos-based GASTech organization</li>
+<li>A spreadsheet of GASTech employee records</li>
+<li>Resumes and short biographies of many, but not all, of the GASTech employees<br />
+</li>
+<li>Historical reports about the POK</li>
+<li>Relevant current and historical news reports from multiple domestic and translated foreign sources<br />
+</li>
+<li>Email headers from two weeks of internal GASTech company email</li>
+</ul>
+<h4 id="tools-to-be-used"><strong>Tools to be used</strong>:</h4>
+<p><strong>tm</strong>: Text mining operations like removing numbers, special characters, punctuation and stop words.<br />
+<strong>stringr</strong>: To parse text data into dataframes<br />
+<strong>openNLP</strong>: Apache OpenNLP is widely used for most common tasks in NLP, such as tokenization, POS tagging, <strong>named entity recognition (NER)</strong>, chunking, parsing, and so on.<br />
+<strong>tidyverse</strong>: For data wrangling<br />
+<strong>ggplot</strong>: For visualizing results</p>
+<h4 id="expected-outputs"><strong>Expected Outputs</strong></h4>
+<ul>
+<li>A graph of employee relationship through emails.<br />
+</li>
+<li>Clustering of news data source based on polarity sentiment score/opinion mining against “POK” and “Government”.<br />
+</li>
+<li>News article in which GASTech employee is mentioned, providing snippets of the article in dashboard.</li>
+</ul>
+<h3 id="mini-challenge-2---jiayi">Mini challenge 2 - Jiayi</h3>
+<h3 id="mini-challange-3---lu-di">Mini challange 3 - Lu Di</h3>
+<h4 id="task-and-approach-1"><strong>Task and approach</strong>:</h4>
+<p>On January 23, 2014, multiple events unfolded in Abila. We are performing a retrospective analysis based on limited information about what took place. My goal is to identify risks and find potential ways to mitigate the risk effectively.</p>
+<p>Base on the data provided, we will evaluate the changing levels of risk to the public and find effective action to avoid things that endanger public safety.</p>
+<h4 id="data-source-1"><strong>Data Source</strong></h4>
+<p>Challenge 3 provides two kinds of texts. One is a collection of <strong>Microblog</strong> which has been identified by automated filters as potentially relevant to the ongoing incident. The other is <strong>Text transcripts</strong> of emergency dispatches by the Abila, Kronos local police and fire departments.</p>
+<h4 id="tools-will-be-used"><strong>Tools will be used</strong></h4>
+<p>R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below to achieve different functions.</p>
+<p><strong>tm</strong>: Text mining operations like removing numbers, special characters, punctuation and stop words.</p>
+<p><strong>snowballc</strong>: For stem the word to reducing words to their base or root form.</p>
+<p><strong>wordcloud</strong>：For generating the word cloud plot.</p>
+<p><strong>syuzhet</strong>: For sentiment scores and emotion classification</p>
+<p><strong>ggplot</strong>: To visualize our analyze result by all kinds of plot.</p>
+<h4 id="expected-outputs-1"><strong>Expected Outputs</strong></h4>
+<p>According to the text analysis and visualization results on <strong>Microblog</strong> and <strong>Text transcripts</strong> on January 23, 2014 17:00 to 21:31 to find out highly possible incident to happen in the future days in Abila, Kronos. With the analysis result, we will propose effective action to stop such incident from happening.</p>
+<h2 id="milestones">Milestones</h2>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

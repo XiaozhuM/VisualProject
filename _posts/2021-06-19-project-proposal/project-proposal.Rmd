@@ -15,31 +15,75 @@ output:
 draft: false
 ---
 
-# Title:
 
-plans on mini challenges to do  
+# Understanding the story behind missing GASTech employee  
+The project will use data from [VAST challenge 2021](https://vast-challenge.github.io/2021/index.html) which the scenario, people, places, technologies are fictitious.The data used in the project, such as news article, resume, micro-blog posts are fictitious too.   
 
-## Motivation and Objective 
+## Backgroud, Motivation and Objective   
+There are two fictitious countries involved in the project setting, Kronos and Tethys. They are both located around Mediterranean Sea. Tethys is a modern country, an economic leader and a key member of Europe's economic, political, and defense organizations. On the contrary, Kronos is a country struggling with poverty with 70% of the population below poverty line. GASTech is a Tethys owned company operating natural gas production in Kronos. Employees are from both Tethys and Kronos with diverse background.     
+
+In 2014, in the midst of celebrating GASTech IPO, several employees went missing. A political activist organization, Protectors Of Kronos(POK) was suspected to be in the disappearance.   
+
+As data analysts specialized in visual analytics, we are helping law enforcement to dive into details and piece together the story of disappearance.  
+
+1. Looking through resumes, past news articles, email conversation headers within GASTech to find out the relationship among the people and organizations. Organizations include GASTech, POK, the APA. The sub-task aims to provide background information of the kidnap and hint of suspicious people for further investigation.    
+2. With GPS tracking data of GASTech cars provided to the employee, credit card transactions, and loyalty card usage, this sub-task aims to identify any suspicious itinerary and behaviors.  
+3. Given collection of microblogs and emergency calls from the days surrounding the disappearance, we will use text analytics to evaluate the changing level of risk over time.   
+
+## Tasks and analysis   
+During the first state, the sub tasks will be distributed among the group members. Each member will take on 1 task. In the second stage, all analysis and visualization will be combined to create a final dashboard using R Shiny.    
+
+### Mini challenge 1 - Xiaozhu  
+
+#### **Task and approach**
+There are 3 categories of data provided for the mini challenge, email conversation headers, employee resume, current and past news article.   
+
+* Extract sender and receiver in email headers and construct a graph  
+* Analyze bias in news through opinion analysis against POK, government and GASTech in each news source.  
+* Analyze and investigate resumes in which some or all of the words from "GASTech", "APA" are mentioned to find potential people who are affiliated with more than 1 organization.  
+* Analyze the newspaper article in which 1 or more of the 36 employees from GASTech is mentioned, especially for articles in 2014 when the incident happened.  
+* Look for cross reference between newspaper and find if there is any dependency among the news data source.
+
+#### **Data Source**
+Data can be downloaded from [VAST mini-challange 2](https://vast-challenge.github.io/2021/MC1.html).
+
+* A map of the fictitious Mediterranean island of Kronos
+* Descriptions of the countries of Kronos and Tethys
+* A chart describing the Kronos-based GASTech organization
+* A spreadsheet of GASTech employee records
+* Resumes and short biographies of many, but not all, of the GASTech employees  
+* Historical reports about the POK
+* Relevant current and historical news reports from multiple domestic and translated foreign sources  
+* Email headers from two weeks of internal GASTech company email  
+
+#### **Tools to be used**:  
+**tm**: Text mining operations like removing numbers, special characters, punctuation and stop words.  
+**stringr**: To parse text data into dataframes  
+**openNLP**:  Apache OpenNLP is widely used for most common tasks in NLP, such as tokenization, POS tagging, **named entity recognition (NER)**, chunking, parsing, and so on.   
+**tidyverse**: For data wrangling  
+**ggplot**: For visualizing results  
+
+#### **Expected Outputs**
+* A graph of employee relationship through emails.  
+* Clustering of news data source based on polarity sentiment score/opinion mining against "POK" and "Government".  
+* News article in which GASTech employee is mentioned, providing snippets of the article in dashboard.  
 
 
-## Tasks and analysis  
-### Mini challenge 1 - XZ  
-what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
 
-### Mini challenge 2 - maybe    
-what is the approach, tasks to perform, any challenge to expect, what are the expected outputs, story to tell  
+### Mini challenge 2 - Jiayi    
+
 
 ### Mini challange 3 - Lu Di  
-#### **Task to performance**:  
-On January 23, 2014, multiple events unfolded in Abila. We are perform a retrospective analysis based on limited information about what took place.My goal is to identify risks and find way how to mitigated the risk more effectively.
+#### **Task and approach**:  
+On January 23, 2014, multiple events unfolded in Abila. We are performing a retrospective analysis based on limited information about what took place. My goal is to identify risks and find potential ways to mitigate the risk effectively.
 
 Base on the data provided, we will evaluate the changing levels of risk to the public and find effective action to avoid things that endanger public safety.
 
-#### **Data Source**:  
-Challenge 3 provide two kind of texts. One is **Microblog** which  have been identified by automated filters as being potentially relevant to the ongoing incident. The other is **Text transcripts** of emergency dispatches by the Abila, Kronos local police and fire departments.
+#### **Data Source**  
+Challenge 3 provides two kinds of texts. One is a collection of **Microblog** which has been identified by automated filters as potentially relevant to the ongoing incident. The other is **Text transcripts** of emergency dispatches by the Abila, Kronos local police and fire departments.
 
-#### **Tools will be used**:  
-R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below  to achieve different functions.  
+#### **Tools will be used**  
+R has a rich set of packages for Natural Language Processing (NLP) and generating plots.In challenge 3 we may use the R packages below to achieve different functions.  
 
 **tm**: Text mining operations like removing numbers, special characters, punctuation and stop words.  
 
@@ -51,8 +95,8 @@ R has a rich set of packages for Natural Language Processing (NLP) and generatin
 
 **ggplot**: To visualize our analyze result by all kinds of plot.
 
-#### **Expected Outputs**: 
-According the text analysis and visualization result on **Microblog** and **Text transcripts** in On January 23, 2014 17:00 to 21:31 to find what's risk have high probability to happen in the future days in Abila, Kronos and figure out effective action to stop such risk from happening.     
+#### **Expected Outputs** 
+According to the text analysis and visualization results on **Microblog** and **Text transcripts** on January 23, 2014 17:00 to 21:31 to find out highly possible incident to happen in the future days in Abila, Kronos. With the analysis result, we will propose  effective action to stop such incident from happening.     
 
 ## Milestones  
 
