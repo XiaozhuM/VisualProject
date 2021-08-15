@@ -16,9 +16,13 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-The project final Research paper and poster can be found here in [github]()
+The project final Research paper and poster can be found here in [github](https://github.com/XiaozhuM/VisualProject/tree/main/paper_poster)
 The shiny application implemented can be found [here](https://xiaozhumao.shinyapps.io/shiny/) 
 
+<iframe src=" https://xiaozhumao.shinyapps.io/shiny/"
+style="border: 1px solid black; width: 100%; height: 500px;"></iframe>  
+
+# User guide of IAT shiny app
 
 ## Mini-Challenge-1  
 In the side panel ,by selecting different employee names from the drop-down list, the employee profile and basic information will be displayed  below. The main panel shows the network of email exchanges for all except those that was sent to everyone, such as "morning briefing" from the administration department. Each node in the network contains the employee’s name and job title, and the color of the node represents The employee's department. By hovering over the node and edge, user can see the specific post of the employee and its neighbors in the network.
