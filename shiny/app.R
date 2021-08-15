@@ -36,12 +36,6 @@ library(stringi)
 library(textclean)
 library(plotly)
 
-
-
-
-
-
-
 gps=read_csv("data/gps.csv")
 names(gps)[names(gps) == 'Timestamp'] = 'timestamp'
 gps_locationT=read_csv("data/gps_locationT.csv")
@@ -146,6 +140,24 @@ employee_email_agg <- employee_email %>%
   transform(Source=sub(" ", ".", Source),
             Target=sub(" ", ".", Target))
 
+#remove those who send to all
+email_eachday <- employee_email_agg %>%
+  filter(Source!=Target) %>%
+  group_by(Source, SentDate, Type, Subject) %>%
+  dplyr::summarise(n=n()) %>%
+  filter(n==53) %>%
+  dplyr::select(Source, SentDate, Subject) %>%
+  arrange(Source,Subject)
+
+employee_email_agg2 <- email_eachday %>%
+  mutate(delete="yes") %>% #mark all emails in email_eachday as "yes" in delete
+  right_join(employee_email_agg, by=c("Source"="Source",
+                                      "Subject"="Subject",
+                                      "Type"="Type",
+                                      "SentDate"="SentDate")) %>%
+  filter(is.na(delete)) %>% #only keep those without a label in delete
+  filter(Source!=Target) %>%
+  dplyr::select(Source, Target, SentDate, SentTime, Subject, Type)
 
 #node
 employee_nodes <- employee_records %>%
@@ -163,13 +175,11 @@ employee_nodes <- employee_nodes %>%
   dplyr::rename(group=Department)
 
 #edges
-employee_edges <- employee_email_agg %>%
-  dplyr::left_join(employee_nodes%>%
-                     dplyr::select(id,label),
-                   by=c("Source"="label"), suffix=c(".Source", ".Target")) %>%
-  dplyr::left_join(employee_nodes%>%
-                     dplyr::select(id,label),
-                   by=c("Target"="label"), suffix=c(".Source", ".Target")) %>%
+employee_edges <- employee_email_agg2 %>%
+  left_join(employee_nodes%>%dplyr::select(id,label),
+            by=c("Source"="label"), suffix=c(".Source", ".Target")) %>%
+  left_join(employee_nodes%>%dplyr::select(id,label),
+            by=c("Target"="label"), suffix=c(".Source", ".Target")) %>%
   dplyr::rename(from=id.Source, to=id.Target) %>%
   group_by(from, to, Source, Target, Type) %>%
   dplyr::summarise(Sum=n()) %>%
@@ -178,9 +188,7 @@ employee_edges <- employee_email_agg %>%
   mutate(value=sum(Sum)) %>%
   mutate(Tooltip=paste(Sum, Type)) %>%
   dplyr::select(-Sum, -Type) %>%
-  mutate(Tooltip=paste(Tooltip, collapse=", ")) %>%
-  mutate(title=paste("<p>from",Source,"to",Target, "</br>",
-                     Tooltip, "</br>")) %>%
+  mutate(title=paste("<p>from",Source,"to",Target, "</br>")) %>%
   ungroup() %>%
   distinct(from, to, value, title)
 
