@@ -1,0 +1,11 @@
+name: shiny
+title:
+username:
+account: xiaozhumao
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 4495155
+bundleId: 4925915
+url: https://xiaozhumao.shinyapps.io/shiny/
+when: 1629042951.90933
+lastSyncTime: 1629042951.90935
