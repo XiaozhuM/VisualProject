@@ -1,0 +1,41 @@
+---
+title: "User Guide"
+author: "Lu Di,Mao XiaoZhu, Wang JiaYi"
+date: "8/15/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+## Mini-Challenge-1  
+In the side panel ,by selecting different employee names from the   drop-down list, the employee profile and basic information will be displayed  below.In the main panel of Email Network on the right, select a different employee ID from the drop-down list, and the employee’s network will appear. Each node in the network contains the employee’s name and job title, and the color of the node represents The employee's department.  
+
+
+![](image/1.png)  
+In the main panel of Email Detail, filter the required information by entering text in the search box. For example, enter the name of the employee who receives or sends emails, and the date and subject of the emails related to him can be displayed.  
+
+
+![](image/2.png)  
+
+
+
+## Mini-Challenge-2  
+In side panel,by changing the time range in slide bar and input specific car id, in the main panel ,the map will display  the correspondent  period and the car's driving track.And the table will show the location of the car corresponding to the selected car id at different times.  
+![](image/4.png)  
+
+
+## Mini-Challenge-3  
+In the 'Key word' tab. By moving the slide bar in side panel,the word cloud graph in main panel will show different number of words in each word cloud graphs.By inputting different key word in text input box,the interactive bar chart in main panel will show micro blog message's number containing key words over time.  
+
+![](image/5.png)  
+
+
+In the 'Microblog Table' tab,we can change the topics number in topic modelling graph by moving 'Topic Number' slide bar to different value. 
+Enter different text in the search box, you can filter out the messages that only contain specific keywords and the corresponding author and sending time.
+![](image/6.png)  
+
+
+
