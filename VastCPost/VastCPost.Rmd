@@ -1,5 +1,5 @@
 ---
-main_topsize: 0.2 #percent coverage of the poster
+main_topsize: 0.08 #percent coverage of the poster
 main_bottomsize: 0.0001
 #ESSENTIALS
 title: '**GAStech**'
@@ -23,7 +23,7 @@ affiliation:
   # - num: 3
   #   address: Another Institute of a place where work gets done, Earth, Milky Way
 main_findings:
-  - "Help **GAStech** to manage company."
+  - "IAT: Incident analysis for **GAStech**"
 
 output: 
   posterdown::posterdown_betterport:
@@ -44,25 +44,21 @@ knitr::opts_chunk$set(echo = FALSE,
 options(knitr.table.format = "html") 
 ```
 
-# Introduction
+# Introduction and objective
 
 In the roughly twenty years that Tethys-based GAStech has been operating a natural gas production site in the island country of Kronos, it has produced remarkable profits and developed strong relationships with the government of Kronos.
 
 During the celebration of the result of the initial public offering of their very successful company. several employees of GAStech go missing. An organization known as the Protectors of Kronos (POK) is suspected in the disappearances. We try to find and help those workers by understanding the complex relationships among them and peeking into those stuff's personal communication, social activities information.
+
+With the given data, the project aims to visualize the relationship between each department, track cars' routine distribution and analyze information in social media during the incident.
 
 
 ```{r, include=FALSE}
 knitr::write_bib(c('posterdown', 'rmarkdown','pagedown'), 'packages.bib')
 ```
 
-## Objectives
-
-1. Visualize the relationship between each department.
-2. Track cars' routine distribution.
-3. Analysis information in communication emails.
-
 # Methods
-In this poster, all data extraction and wrangling are done in R using the tidyverse suite of packages. Basing on several data files the official site provided, we will use different functions to visualize data and find the invisible information under the numbers. 
+The project uses R for data processing and visualization, specifically through network analysis, text analysis and map visualization. 
 
 ## Vast Challenge 1
 
@@ -186,23 +182,21 @@ visNetwork(employee_nodes, employee_edges_suspect) %>%
   visIgraphLayout(layout="layout_nicely") 
 ``` 
 
-![alt text](data/Picture1.png){width=100%}
-Diagram
+![](data/Picture1.png){width=100%}
 
-Description automatically generated 
 
 From the background information, we know that the founding leaders of POK are Henk Bodrogi, Jeroen Karel, Carmine Osvaldo and the current leaders are Elian Karel, Silvia Marek, Mandor Vann, Isia Vann, Lucio Jakab, Lorenzo Di Stefano, Valentine Mies, Yanick Cato and Joreto Katell. There are 7 employees with the same last name of middle name as the POK leaders. 5 of them are in securities and 1 of them is the truck driver. The combination enables them to conveniently bring in suspected people or bring out people sneakily.  
 
-By inspecting their email exchanges among these people, it was found out Ruscella Mies Haber, assistant to the engineering group manager, has sent emails to Minke Mies who is outside of the department about "FW: ARISE - Inspiration for Defenders of Kronos". The title contains defenders of kronos, which highly resembles Protectors of Kronos. Checking the people involved in the email, surprisingly most of them, Ruscella Mies Haber, Loreto Bodrogi, Isia Vann, Hennie Osvaldo, Minke Mies are having the same sir names as the POK leaders. There is potentially a small POK branch in GASTech. Rachel Pantanal and Inga Ferro, though not directly related to the POK leaders, potentially are in the group too. Especially considering that Rachel Pantanal was the one initiating the email.  
+By inspecting their email exchanges among these people, it was found out Ruscella Mies Haber, assistant to the engineering group manager, has sent emails to Minke Mies who is outside of the department about "FW: ARISE - Inspiration for Defenders of Kronos". The title contains defenders of kronos, which highly resembles Protectors of Kronos. Checking the people involved in the email, surprisingly most of them, Ruscella Mies Haber, Loreto Bodrogi, Isia Vann, Hennie Osvaldo, Minke Mies are having the same sir names as the POK leaders. There is potentially a small POK branch in GASTech. Especially considering that Rachel Pantanal was the one initiating the email.  
 
- "Arise" in the email title, is also a magazine that APA sought to build brand through. There might be a link between the email and the Arise magazine. _"In recent years the APA has sought to build their brand through websites and the publication of a professional, high-quality magazine called "Arise"."_ (from International Times) 
+"Arise" in the email title, is also a magazine that APA sought to build brand through. There might be a link between the email and the Arise magazine. _"In recent years the APA has sought to build their brand through websites and the publication of a professional, high-quality magazine called "Arise"."_ (from International Times) 
 
 
 ## Vast Challenge 2
 
-In the above section, we find anomalies in Loreto Bodrogi(id:16), Isia Vann(id:17), Hennie Osvaldo(id:22) and Minke Mies(id:25). Next we will visualize their cars' track to find invisible information.
+In the above section, we find anomalies in Loreto Bodrogi, Isia Vann, Hennie Osvaldo and Minke Mies. Next we will visualize their cars' track to find invisible information.
 
-By filtering the records during the early morning (2am to 4am), I find some anomalies during this special time. Car id: 4, 10, 35, 32 and 21 arrived to place **Car id: 16's home** at 03:30, Jan 11, 2014. Car id: 21 and 24 arrived to place car id: 17's home at 03:40, Jan 9, 2014.
+By filtering the records during the early morning (2am to 4am), we find some anomalies during this special time. Ingrid Barranco, Ada Campo-Torento, Stenig Fusil, Orhan Strum  and Edvard Vann arrived at **Isia Vann's home** at 3:30am, Jan 11, 2014. Hennie Osvaldo and Minke Mies arrived at **Sven Flecha's home** at 3:40am, Jan 9, 2014.
  
 ```{r eval=FALSE}
 library(DT)
@@ -247,9 +241,7 @@ tm_shape(ap)+
   tm_lines()
 ```
 ![](data/Picture2.png){width=100%}
-
-
-We also find that destinations of workers are located in car id: 2’s home. By observing the time, they all happened at the night, Jan 10, 2014. The involved employees are: 19, 3, 11, 28, 26, 5, 8, 1 and so on. I guess that a party or some kind of meeting happened.
+Apart from the suspected people identified in previous section, it was also found that destinations of many workers are at **Car id: 2 Lars Azada's home**. By observing the time, these visits all happened at night on Jan 10 2014. There were more than 8 employees involved who are from multiple departments.
 
 ```{r eval=FALSE}
 gps_t5=gps
@@ -282,7 +274,6 @@ tm_shape(ap)+
   tm_lines()
 ```
 ![](data/Picture3.png){width=100%}
-
 By changing hours and car id in the codes, we could find useful patterns:
 
 1. Between 6am and 10am in all workdays. Besides staying in homes and the company, employees usually appear in the cafeteria. It indicates that they often eat breakfast or buy the food on the way to the company.
@@ -293,7 +284,7 @@ By changing hours and car id in the codes, we could find useful patterns:
 
 ## Vast Challenge 3
 
-In the Mini-challenge 3 , It's give a collection of a collection of microblogs and emergency calls from the days surrounding the disappearance. In order to visualize the occurrence and duration of important events, the time can be divided into different groups every half an hour, and the number of words related to related events in each time period can be counted. The number of words will reflect the impact of the event. Using the  interactive bar chart  to visualize changes in important events over time.  
+In the Mini-challenge 3, a collection of microblogs and emergency calls from the days surrounding the disappearance is given. In order to visualize the occurrence and duration of important events, the time is divided into groups of every 30 min. The occurence of keywords are shown in the wordcloud below. The larger words represents larger impact. 
 ```{r }
 packages = c('tm', 'SnowballC', 'wordcloud', 'stopwords',  
             'ggplot2','syuzhet','tidytext', 'igraph', 'visNetwork',  
@@ -317,7 +308,7 @@ MC3 <- rbind(MC3_1,MC3_2,MC3_3)
 MC3$time<-ymd_hms(MC3$date.yyyyMMddHHmmss.)
 MC3$message<-MC3$message%>%tolower()
 MC3$author<-MC3$author%>%tolower()
-pr_stem_words(MC3,message, language = "english")
+MC3<-pr_stem_words(MC3,message, language = "english")
 #Remove stop words
 MC3$message<-MC3$message%>%removeWords(stopwords('english'))%>%  
 # Replace all contraction word to normal  length  
@@ -349,7 +340,7 @@ MIBLOG_TOPIC<-MIBLOG%>%
   count(word, sort = TRUE)
 ```
 
-```{r eval=TRUE} 
+```{r include=FALSE}
 tf_idf <- MIBLOG_TOPIC%>%
   bind_tf_idf(word,time_period, n) %>%
   arrange(desc(tf_idf))
@@ -370,7 +361,8 @@ tf_idf %>%
   labs(x = "tf-idf", 
        y = NULL)
 ```  
-```{r eval=FALSE} 
+
+```{r echo=FALSE}
 set.seed(1234)
 MIBLOG_TOPIC %>%
   group_by(time_period) %>% 
@@ -381,13 +373,14 @@ ggplot(aes(label = word,
   theme_minimal() +
   facet_wrap(~time_period)
 ```
-Combining the word cloud image and TF-IDF, we can infer the following important events that happened in Abila on 2014-1-23 night.
+
+The following important events that happened in Abila on 2014-1-23 night were inferred from the wordcloud. 
+
 1.The organization of POK(Protectors of Kronos) held a rally in Abila city park from 17:00 on and 'Sylvia Marek' is their leader.   
 2.Dancing dolphin apartment got fired at 18:30. After 21:30, there was an explosion in the building.  
 3.After 20:00:00, the firefighters arrived at the apartment and started to put out the fire. The police caught the suspect in a van after 21:00.  
 4.The police were dispatched at 18:30 and caught the suspect in a van after 21:00.  
-But we not only want to know the time of each event but also want to visualize the development of the impact of the event over time which was the level of the risk to the public evolves throughout the evening.
- To know the start and duration of these three events, use the filter function and the keywords of the corresponding event to extract the messages of the corresponding event, and group by 30 every minute to count their numbers.
+Apart from the time, the impact of events over time, which indicates the level of risk is also important to understand through visualization. The keywords of the  event is used to filter and extract the corresponding messages They are then grouped by every 30 minutes for the frequency of such keywords.
 ```{r  eval=TRUE} 
 pal <- c("red","purple","blue","green")
 MIBLOG_rally<-MIBLOG%>%filter(str_detect(message,'pok')|   str_detect(message,'rally')|str_detect(message,'abila')|    
@@ -418,7 +411,7 @@ colors = pal)%>%
 layout(title = 'Event of dophin apartment fire')
 
 ```
-According to the above picture ,apartment fires and evacuation mainly occurred between 18:30 and 20:00.
+According to the above picture, apartment fires and evacuation occurred between 18:30 and 20:00.
 ```{r eval=TRUE} 
 pal <- c("red","purple","blue","green")
 MIBLOG_apartment<-MIBLOG%>%filter(str_detect(message,'police')|                        str_detect(message,'van')|str_detect(message,'arrested')|  
