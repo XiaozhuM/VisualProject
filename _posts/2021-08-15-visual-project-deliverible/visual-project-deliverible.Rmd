@@ -16,8 +16,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-The project final Research paper and poster can be found here in [github](https://github.com/XiaozhuM/VisualProject/tree/main/paper_poster)
-The shiny application implemented can be found [here](https://xiaozhumao.shinyapps.io/shiny/) 
++ The project final Research paper and poster can be found here in [github](https://github.com/XiaozhuM/VisualProject/tree/main/paper_poster)  
++ The other project files can be found in [github directory](https://va-project2021.netlify.app/posts/2021-08-15-visual-project-deliverible/)  
++ The shiny application implemented can be found [here](https://xiaozhumao.shinyapps.io/shiny/)   
 
 <iframe src=" https://xiaozhumao.shinyapps.io/shiny/"
 style="border: 1px solid black; width: 100%; height: 500px;"></iframe>  
