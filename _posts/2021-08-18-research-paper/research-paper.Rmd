@@ -1,10 +1,10 @@
 ---
 title: "Research Paper"
 description: |
-  A short description of the post.
+  Research paper of the project. It can also be found [here](https://github.com/XiaozhuM/VisualProject/blob/main/paper_poster/ResearchPaper.pdf)
 author:
   - name: LU Di, MAO Xiaozhu, WANG Jiayi
-    url: {}
+    url: 
 date: 08-18-2021
 output:
   distill::distill_article:
@@ -16,8 +16,9 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+![](image/ResearchPaper.jpg)
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
-
+![](image/ResearchPaper2.jpg)
+![](image/ResearchPaper3.jpg)
+![](image/ResearchPaper4.jpg)
 

@@ -19,7 +19,7 @@
   {
     "path": "posts/2021-08-18-research-paper/",
     "title": "Research Paper",
-    "description": "A short description of the post.",
+    "description": "Research paper of the project. It can also be found [here](https://github.com/XiaozhuM/VisualProject/blob/main/paper_poster/ResearchPaper.pdf)",
     "author": [
       {
         "name": "LU Di, MAO Xiaozhu, WANG Jiayi",
@@ -28,9 +28,9 @@
     ],
     "date": "2021-08-18",
     "categories": [],
-    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "contents": "\n\n\n\n\n\n",
     "preview": {},
-    "last_modified": "2021-08-18T20:57:22+08:00",
+    "last_modified": "2021-08-18T21:11:54+08:00",
     "input_file": "research-paper.knit.md"
   },
   {
