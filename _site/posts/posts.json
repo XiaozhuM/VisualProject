@@ -1,5 +1,56 @@
 [
   {
+    "path": "posts/2021-08-18-user-guide/",
+    "title": "User Guide",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "LU Di, MAO Xiaozhu, WANG Jiayi",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-18",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-18T20:57:12+08:00",
+    "input_file": "user-guide.knit.md"
+  },
+  {
+    "path": "posts/2021-08-18-research-paper/",
+    "title": "Research Paper",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "LU Di, MAO Xiaozhu, WANG Jiayi",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-18",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-18T20:57:22+08:00",
+    "input_file": "research-paper.knit.md"
+  },
+  {
+    "path": "posts/2021-08-18-poster/",
+    "title": "Poster",
+    "description": "A short description of the post.",
+    "author": [
+      {
+        "name": "LU Di, MAO Xiaozhu, WANG Jiayi",
+        "url": {}
+      }
+    ],
+    "date": "2021-08-18",
+    "categories": [],
+    "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill at https://rstudio.github.io/distill.\n\n\n\n",
+    "preview": {},
+    "last_modified": "2021-08-18T20:57:31+08:00",
+    "input_file": "poster.knit.md"
+  },
+  {
     "path": "posts/2021-08-15-visual-project-deliverible/",
     "title": "IAT - a Shiny App for Incident Analysis Tools with visual analytics ",
     "description": "The project is a partial answer to the VAST challenge 2021 in which a fictional incident happened in Kronos, a fictional island country. Employees from GASTech, an oil company having site in Kronos, went missing during a celebration event. A grassroot activist group, Protectors of Kronos, were suspected to be responsible for the kidnap. By conducting various visual analysis and implementing a shiny web app **IAT**, the project aims to gain  understanding of the people potentially involved in the incident and the details of the incident. There are 3 parts of the analysis, network analysis of GASTech employee, pattern detection through car route of GASTech employee, and text analysis of microblogs in social media. The analysis results were displayed with visualization from Shiny App.",
