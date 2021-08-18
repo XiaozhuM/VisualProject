@@ -1,10 +1,10 @@
 ---
 title: "Poster"
 description: |
-  A short description of the post.
+  Poster for the project deliverible, shiny app. It can also be found [here](https://github.com/XiaozhuM/VisualProject/blob/main/paper_poster/GAStech.pdf)
 author:
   - name: LU Di, MAO Xiaozhu, WANG Jiayi
-    url: {}
+    url: 
 date: 08-18-2021
 output:
   distill::distill_article:
@@ -16,8 +16,5 @@ output:
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
-
-Learn more about using Distill at <https://rstudio.github.io/distill>.
-
+![](image/GAStech.jpg)
 
