@@ -1,13 +1,11 @@
 ---
-title: "Welcome to Visual Analytics Project"
+title: "Welcome to Visual Analytics Project Group 4 "
 description: |
-  Welcome to our new blog, Visual Analytics Project. We hope you enjoy 
-  reading what we have to say!
+  SMU MITB ISSS608 Visual Analytics AY20-21 Term 3 - Group 4
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  - name: LU Di, MAO Xiaozhu, WANG Jiayi 
+    url: https://github.com/XiaozhuM/VisualProject
+    affiliation: Singapore Management University
 date: 06-19-2021
 output:
   distill::distill_article:
@@ -16,11 +14,13 @@ output:
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating blogs with Distill at:
-# https://rstudio.github.io/distill/blog.html
-
 ```
 
+Hi :) This is group 4 from ISSS608-Visual Analytics AY20-21 Term 3 G2 - group 4. You can find our proposal and project final deliveribles in the blog, including the shiny app with its user guide, a poster and a short research paper. 
 
+Please enjoy and feel free to contact us at  
+
++ xiaozhu.mao.2020@mitb.smu.edu.sg
++ dilu.2020@mitb.smu.edu.sg
++ jiayiwang.2020@mitb.smu.edu.sg
 
